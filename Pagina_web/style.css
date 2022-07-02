@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+   
+}
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    
+}
+.logo{
+    color: #16507b;
+}
+logo h2{
+    font-weight: normal;
+    font-size: 22px;
+}
+.menu-desktop{
+    width: 80%;
+    text-align: right;
+    
+    
+}
+.menu-desktop a{
+    color:#124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: .4s;
+
+}
+.menu-desktop a:hover {
+    color: #007bff;
+}
+.menu-desktop .btn-menu{
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+
+}
+.menu-desktop .btn-menu:hover{
+    background-color: #124265;
+    color:white
+}
+.menu-mobile{
+    display: none;
+}
+/* Section Main */
+section.main{
+    background-image: url(./img/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+   
+}
+.main_cta{
+    width: 100%;
+    text-align: center;
+    margin: 60px 0;
+
+}
+.main_cta h2{
+    color: #16507b;
+    font-size: 40px;
+}
+.main_cta p {
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0 ;
+}
+.main_cta button{  
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 1s;
+}
+.main_cta button:hover{
+    background-color: #124265;
+    color:white
+}
+
+
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+
+}
+.diferencial-single{
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    margin-top: 3px;
+    width: fit-content;
+    padding: 50px 20px;
+    transition: 1s;
+    
+    
+}
+.diferencial-single:hover{
+    background-color: rgb(173, 171, 171);
+    transition: 0.7s;
+    transform: scale(1.1,1.1);
+    /* transform:scaleZ(2) */
+}
+.diferencial-single i {
+    color: #124265;
+    font-size: 23px;
+}
+.diferencial-single h2{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 17px;
+
+}
+.diferencial-single p {
+    color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+section .sobre{
+    padding: 80px 0;
+}
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+.chamada-sobre h2{
+    text-transform: uppercase;
+    color: #124265;
+}
+.chamada-sobre p{
+    font-size: 13px;
+    color: gray;
+    margin: 10px 0px;
+}
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteudo-sobre p{
+    width: 50vh;
+    margin: 0 20px;
+    color: #444;
+}
+.conteudo-sobre span{
+    display: inline-block;
+    width: 100vh;
+    margin-top: 10px;
+   
+
+}
+.conteudo-sobre i{
+   color: #007bff; 
+   
+}
+section .conquistas{
+    background-color: #f8fbfe;
+    padding: 20px 20px;
+   
+}
+.conquista-single{
+    width:23% ;
+    margin-right: 2%;
+    text-align: center;
+    color: #124265;
+    margin-top: 50px;
+}
+.conquista-single img{
+max-width: 100%;
+padding: 20px 0;
+}
+
+.conquista-single img{
+    filter: grayscale(100%);
+    transition: 1s;
+    transform: scale(1,1);
+}
+.conquista-single img:hover{
+    filter: grayscale(0);
+    transform: scale(1.2,1.2);
+}
+.conquista-single h2{
+    font-size: 30px;
+}
+.menu-items{
+    position: absolute;
+    left: 0%;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom:2px solid gray;
+    display: none;
+    transition: 1s;
+    opacity: 0;
+}
+.menu-items.show{
+    display:block;
+    opacity: 1;
+   
+}
+.menu-items.hide{
+    display: none;
+    opacity: 0;
+}
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+section .sobre-empresa{
+    padding: 40px 0;
+    
+}
+.sobre-empresa-img{
+    width: 50%;
+   
+}
+.sobre-empresa-img img {max-width: 100%;}
+
+.sobre-empresa-content{
+    margin-top: 50px;
+    width: 50%;
+    padding: 0 50px;
+}
+.sobre-empresa-content h2{
+    color: #124265;
+    margin-bottom: 20px;
+
+}
+.sobre-empresa-content p {
+    color:#444 ;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+section .depoimentos{
+    padding: 40px 0;
+}
+
+
+section .depoimentos .depoimentos-chamada{
+    text-align: center;
+}
+.depoimentos-chamada h2{
+    text-align: center;
+    color: #124265;
+    text-transform: uppercase;
+}
+ .depoimentos-chamada p{
+    text-align: center;
+    color: rgb(172, 168, 168);
+    margin: 10px 0;
+    font-size: 14px;
+}
+ .carousel{
+    width: 100vw;
+   display:flex ;
+   flex-direction: row;
+    
+    
+
+    }
+.carousel-single{
+    width: 33%;
+    margin-right: 2%;
+    text-align: center;
+   
+    
+}
+.carousel-single img{
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   display: inline;
+   margin:10px 0;
+   
+
+    
+   
+}
+.carousel-single-box{
+    
+    padding: 20px;
+    background-color:#f3f9fd ;
+    border-radius: 10px;
+}
+.carousel-single-box p{
+    font-style: italic;
+    font-size: 14px;
+    color: #4b4b4b;
+    
+}
+.carousel-single-box i{
+    color: #c9e3f5;
+    font-size: 19px;
+    padding: 0 8px;
+}
+.carousel-single span{
+    color: #ccc;
+}
+
+
+@media screen and (max-width:768px) {
+.diferencial-single{ width: 100vw;
+margin-bottom: 20px;
+}
+.conteudo-sobre p{
+width: 100%;
+margin:20px 20px;
+
+}
+.menu-desktop{
+    display: none;
+}
+.logo{
+    width: 20%;
+}
+.menu-mobile{
+    width: 80vw;
+    text-align: right;
+    display: block;
+    height:fit-content
+}  
+.menu-mobile i{
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 8px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}  
+.sobre-empresa-img{
+    width: 100vw;
+
+}
+.sobre-empresa-content{
+    width: 100vw;
+}
+
+.carousel-single-box{
+    width: 100vw;
+    
+}
+.carousel{
+    width: 100vw;
+
+}
+.carousel-single{
+    width: 100vw;
+}
+.conquista-single{
+    width: 100vw;
+    margin-bottom: 10px;
+}
+}
